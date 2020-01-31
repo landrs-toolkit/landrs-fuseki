@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:aero="file:///Users/cvardema/Work/research/hydra/landrs-hydra/data/semantics.aero/pages/swim-vocabulary#" xmlns:atm="https://data.nasa.gov/ontologies/atmonto/ATM#" xmlns:drone="http://schema.landrs.org/" xmlns:envo="http://purl.obolibrary.org/obo/" xmlns:eqp="https://data.nasa.gov/ontologies/atmonto/equipment#" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:geoschemas="http://geoschemas.org/" xmlns:geosparql="http://www.opengis.net/ont/geosparql#" xmlns:hydra="http://www.w3.org/ns/hydra/core#" xmlns:ir="http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:qudt-1-1="http://qudt.org/1.1/schema/qudt#" xmlns:qudt-unit-1-1="http://qudt.org/1.1/vocab/unit#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sf="http://www.opengis.net/ont/sf#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:sosa-ext="http://www.w3.org/ns/ssn/ext#" xmlns:sosa="http://www.w3.org/ns/sosa#" xmlns:ssn-system="http://www.w3.org/ns/ssn/systems/" xmlns:ssn="http://www.w3.org/ns/ssn#" xmlns:st="http://www.opengis.net/spec/iot_sensing/1.0/req/" xmlns:step="http://www.purl.org/net/step#" xmlns:td="https://www.w3.org/2019/wot/td#" xmlns:traj="http://w3id.org/daselab/onto/trajectory#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone">
+    <rdf:type rdf:resource="http://schema.landrs.org/UAV"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone">
+    <td:title>My Drone Thing</td:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone">
+    <schema:name>My Drone Thing</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone">
+    <eqp:aircraftSerialNumber xml:lang="en">XKFOENGENXWE</eqp:aircraftSerialNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone">
+    <eqp:aircraftTypeDesignator xml:lang="en">Drone</eqp:aircraftTypeDesignator>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone">
+    <schema:Model xml:lang="en">Mavic</schema:Model>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone">
+    <schema:Brand xml:lang="en">DJI</schema:Brand>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls">
+    <rdf:type rdf:resource="http://schema.landrs.org/FlightControlSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls">
+    <sosa:isHostedBy rdf:resource="http://ld.landrs.org/Thing/drone"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls">
+    <drone:isPartOf rdf:resource="http://ld.landrs.org/Thing/drone"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/autopilot">
+    <rdf:type rdf:resource="http://schema.landrs.org/Autopilot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/autopilot">
+    <drone:isPartOf rdf:resource="http://ld.landrs.org/schema/Thing/drone/fls"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/autopilot">
+    <rdfs:label xml:lang="en">PX4 Drone Autopilot Software</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/autopilot">
+    <rdfs:comment xml:lang="en">IPhone 7 - IMEI 35-207306-844818-0 - John Doe</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/autopilot">
+    <schema:availableOnDevice xml:lang="en">CUAV 5+ Autopilot</schema:availableOnDevice>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/autopilot">
+    <schema:SoftwareVersion xml:lang="en">1.9.2</schema:SoftwareVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/autopilot">
+    <schema:Name xml:lang="en">PX4 Drone Autopilot</schema:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/autopilot">
+    <schema:sameAs>https://px4.io/</schema:sameAs>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/autopilot">
+    <drone:runsOn rdf:resource="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <rdf:type rdf:resource="http://schema.landrs.org/FlightControllerBoard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <drone:isPartOf rdf:resource="http://ld.landrs.org/schema/Thing/drone/fls"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <rdfs:label xml:lang="en">CUAV 5+ Autopilot Board</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <rdfs:comment xml:lang="en">V5+® is an advanced autopilot manufactured by CUAV®. It was designed by CUAV® in collaboration with the PX4 team.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <schema:sameAs rdf:resource="http://docs.px4.io/master/en/flight_controller/cuav_v5_plus.html"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <schema:Model xml:lang="en">CUAV 5+</schema:Model>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <sosa:hosts rdf:resource="http://ld.landrs.org/sensor/35-207306-844818-0/ICM-20689"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <sosa:hosts rdf:resource="http://ld.landrs.org/sensor/35-207306-844818-0/BMI055"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <sosa:hosts rdf:resource="http://ld.landrs.org/sensor/35-207306-844818-0/IST8310"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <sosa:hosts rdf:resource="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard">
+    <sosa:hosts rdf:resource="http://ld.landrs.org/actuator/35-207306-844818-0/T5008"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/ICM-20689">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/ICM-20689">
+    <rdfs:label xml:lang="en">TDK ICM-20629 Accelerometer-Gyroscope</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/ICM-20689">
+    <rdfs:comment>ICM-20689 is a 6-axis MotionTracking device that combines a 3-axis gyroscope, 3-axis accelerometer</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/ICM-20689">
+    <schema:sameAs rdf:resource="https://www.invensense.com/products/motion-tracking/6-axis/icm-20689/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/ICM-20689">
+    <sosa:isHostedBy rdf:resource="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/ICM-20689">
+    <sosa:observableProperty rdf:resource="http://sweetontology.net/propSpaceDirection/Orientation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/ICM-20689">
+    <sosa:observableProperty rdf:resource="http://sweetontology.net/propSpeed/Acceleration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/BMI055">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/BMI055">
+    <rdfs:label xml:lang="en">Bosh Sensortec 6-axis inertial measurement unit</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/BMI055">
+    <rdfs:comment>THe BMI055 is an ultra-small, 6-axis inertial sensor, consisting of: A digital, triaxial 12bit acceleration sensor and a digital, triaxial 16bit, ±2000°/s gyroscope</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/BMI055">
+    <schema:sameAs rdf:resource="https://www.bosch-sensortec.com/bst/products/all_products/bmi055"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/BMI055">
+    <sosa:isHostedBy rdf:resource="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/BMI055">
+    <sosa:observableProperty rdf:resource="http://sweetontology.net/propSpaceDirection/Orientation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/BMI055">
+    <sosa:observableProperty rdf:resource="http://sweetontology.net/propSpeed/Acceleration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/IST8310">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/IST8310">
+    <rdfs:label>iSentek Three-axis Magnetometer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/IST8310">
+    <rdfs:comment>iSentek’s three-axis magnetometers use anisotropic magneto resistance (AMR)technology. They offer high spatial resolution, high precision and low power consumption performance. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/IST8310">
+    <schema:sameAs rdf:resource="http://www.isentek.com/en/the_product.php?pid=4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/IST8310">
+    <sosa:isHostedBy rdf:resource="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/IST8310">
+    <sosa:observableProperty rdf:resource="http://sweetontology.net/propSpaceLocation/Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611">
+    <rdfs:label>MS5611 Altimiter Pressure Sensor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611">
+    <rdfs:comment>Barometric pressure sensor optimized for altimeters and variometers with an altitude resolution of 10 cm</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611">
+    <schema:sameAs rdf:resource="https://www.te.com/usa-en/product-CAT-BLPS0036.html"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611">
+    <sosa:isHostedBy rdf:resource="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611">
+    <sosa:observableProperty rdf:resource="http://sweetontology.net/propSpaceHeight/BarometricAltitude"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611">
+    <ssn-system:hasOperatingRange rdf:resource="file:///Users/cvardema/Work/research/hydra/landrs-hydra/data/sensor/35-207306-844818-0/MS5611#AltimiterOperatingRange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611#AltimiterOperatingRange">
+    <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611#AltimiterOperatingRange">
+    <rdfs:comment xml:lang="en">The conditions in which the MS5611 Altimiter sensor is expected to operate.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611#AltimiterOperatingRange">
+    <ssn-system:inCondition rdf:resource="http://ld.landrs.org/NormalOperatingCondition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/sensor/35-207306-844818-0/MS5611#AltimiterOperatingRange">
+    <ssn-system:inCondition rdf:resource="http://ld.landrs.org/NormalPressureCondition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalOperatingCondition">
+    <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/Condition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalOperatingCondition">
+    <rdf:type rdf:resource="http://schema.org/PropertyValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalOperatingCondition">
+    <rdfs:comment xml:lang="en">A temperature range of -40 to 85 Celsius.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalOperatingCondition">
+    <schema:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-40.0</schema:minValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalOperatingCondition">
+    <schema:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">85.0</schema:maxValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalOperatingCondition">
+    <schema:unitCode rdf:resource="http://qudt.org/1.1/vocab/unit#DegreeCelsius"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalPressureCondition">
+    <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/Condition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalPressureCondition">
+    <rdf:type rdf:resource="http://schema.org/PropertyValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalPressureCondition">
+    <rdfs:comment xml:lang="en">A pressure range of 10 to 1200 mbar.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalPressureCondition">
+    <schema:minValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</schema:minValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalPressureCondition">
+    <schema:maxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</schema:maxValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/NormalPressureCondition">
+    <schema:unitCode rdf:resource="http://qudt.org/1.1/vocab/unit#MilliBAR"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/actuator/35-207306-844818-0/T5008">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa#Actuator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/actuator/35-207306-844818-0/T5008">
+    <rdfs:label>XOAR Titan T5008 Brushless Electric Motor Heavy Lifting Series</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/actuator/35-207306-844818-0/T5008">
+    <rdfs:comment>XOAR Titan T5000 Brushless Electric Motor Heavy Lifting Series offers all multicopters and drones manufacturers, engineers, pilots and enthusiasts the best performance and reliable propulsion system with XOAR Precision Pair Propellers. XOAR Titan Brushless Electric Motors are specially designed with top grade materials and unique design to work with XOAR Precision Pair Propellers in order to offer the best balance in weight and performance. XOAR Titan T4000 Heavy Lifting Series includes T5008 - KV320, T5010 - KV300, T5012 - KV300, T5015 - KV285 which supports All Up Weight (AUW) for quadcopter, hexacopter, octocopter from min. 6.24 Kg, 9.36 Kg, 12.48 Kg to max. 12.4 Kg, 18.6 Kg and 24.8 Kg respectively. See below for more detailed specs and performance data.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/actuator/35-207306-844818-0/T5008">
+    <schema:sameAs rdf:resource="https://www.xoarintl.com/brushless-electric-motors/titan/titan-T5000-heavy-lifting-series/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/actuator/35-207306-844818-0/T5008">
+    <sosa:isHostedBy rdf:resource="http://ld.landrs.org/schema/Thing/drone/fls/FlightControllerBoard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/propeller/35-207306-844818-0/">
+    <rdf:type rdf:resource="http://schema.landrs.org/Propeller"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/propeller/35-207306-844818-0/">
+    <rdfs:label>Precision Pair Beechwood Propeller w/ Metallic Coating</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/propeller/35-207306-844818-0/">
+    <schema:sameAs rdf:resource="https://www.xoarintl.com/multicopter-propellers/precision-pair/PJP-N-M-The-Electric-Sword-Percision-Pair/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ld.landrs.org/propeller/35-207306-844818-0/">
+    <drone:isPartOf rdf:resource="http://ld.landrs.org/actuator/35-207306-844818-0/T5008"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <rdf:type rdf:resource="http://qudt.org/1.1/schema/qudt#QuantityValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <qudt-1-1:numericValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">92.998761214</qudt-1-1:numericValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.2956875118</geo:lat>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-83.2387876583</geo:long>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <sosa:PhenomenonTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-19 07:57:04</sosa:PhenomenonTime>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <sosa:hasFeatureOfInterest rdf:nodeID="N752bbb325e8742029ab6a789ff642590"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <sosa:hasResult rdf:nodeID="genid2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <sosa:madeBySensor rdf:nodeID="Na1f49308d5b4491dadf6726a9cbcb42e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <sosa:observedProperty rdf:resource="http://genivi.org/ns/vss#Speed"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geoschemas.org/ResearchSite">
+    <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geoschemas.org/SpatialFeatureOfInterest">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geoschemas.org/SpatialFeatureOfInterest">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa#FeatureOfInterest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geoschemas.org/SpatialFeatureOfInterest">
+    <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geoschemas.org/MovingFeature">
+    <rdfs:subClassOf rdf:resource="http://geoschemas.org/SpatialFeatureOfInterest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geoschemas.org/MovingFeature">
+    <rdfs:subClassOf rdf:resource="http://w3id.org/daselab/onto/trajectory#MovingObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UxV">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UxV">
+    <rdfs:label>UxV</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UxV">
+    <rdfs:comment>Unmanned Vehicle</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UxV">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa#Platform"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UxV">
+    <rdfs:subClassOf rdf:resource="https://www.w3.org/2019/wot/td#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UxV">
+    <rdfs:subClassOf rdf:resource="http://schema.org/Vehicle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UxV">
+    <drone:hasPart rdf:resource="http://schema.landrs.org/body"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UAV">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UAV">
+    <rdfs:label>UAV</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UAV">
+    <rdfs:comment>Unmanned Arial Vehicle</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UAV">
+    <rdfs:subClassOf rdf:resource="http://schema.landrs.org/UxV"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UAV">
+    <rdfs:subClassOf rdf:resource="https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/UAV">
+    <drone:hasPart rdf:resource="http://schema.landrs.org/Airframe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Body">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Airframe">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Airframe">
+    <rdfs:subClassOf rdf:resource="http://schema.landrs.org/Body"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Propeller">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Propeller">
+    <drone:isPartOf rdf:resource="http://schema.landrs.org/Body"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Payload">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Payload">
+    <drone:isPartOf rdf:resource="http://schema.landrs.org/UxV"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/SensorPayload">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/SensorPayload">
+    <rdfs:label>Sensor Payload</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/SensorPayload">
+    <rdfs:comment>Payload that is a instrument platform such as cameras, atmospheric sensors, etc</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/SensorPayload">
+    <rdfs:subClassOf rdf:resource="http://schema.landrs.org/payload"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/SensorPayload">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa#System"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Autopilot">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Autopilot">
+    <rdfs:subClassOf rdf:resource="file:///Users/cvardema/Work/research/hydra/landrs-hydra/data/semantics.aero/pages/swim-vocabulary#software-agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Autopilot">
+    <rdfs:subClassOf rdf:resource="https://data.nasa.gov/ontologies/atmonto/equipment#AircraftNavigationSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Autopilot">
+    <rdfs:subClassOf rdf:resource="http://schema.org/SoftwareApplicaion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Autopilot">
+    <rdfs:label>Autopilot</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Autopilot">
+    <rdfs:comment>Software to control and navigate an aircraft</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Autopilot">
+    <skos:altLabel>Flight Controller </skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/Autopilot">
+    <skos:altLabel>Flight Controller Board</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/FlightControllerBoard">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/FightControlSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/FightControlSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/mission">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/mission">
+    <rdf:type rdf:resource="http://schema.landrs.org/Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/mission">
+    <rdf:type rdf:resource="https://data.nasa.gov/ontologies/atmonto/ATM#Flight"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/runsOn">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/runsOn">
+    <rdfs:label>runs on</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/runsOn">
+    <rdfs:comment>Links a Autopilot software uri to the controller board uri</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/runsOn">
+    <rdfs:domain rdf:resource="http://schema.landrs.org/Autopilot"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/runsOn">
+    <rdfs:range rdf:resource="http://schema.landrs.org/FlightControllerBoard"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/hasPart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/hasPart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/hasPart">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/hasPart">
+    <rdfs:comment>A transitive relation expressing parthood between any entities, e.g. 'the human body has a brain as part'. When specializing this pattern, take care of restricting the domain and range appropriately, since it could be counterintuitive to use this relation arbitrarily, e.g. between animals and planets. For an intransitive partof pattern, see 'componency'.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/hasPart">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/hasPart">
+    <rdfs:isDefinedBy rdf:resource="file:///Users/cvardema/Work/research/hydra/landrs-hydra/data/dronekg.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/hasPart">
+    <rdfs:label xml:lang="en">has part</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/hasPart">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/hasPart">
+    <owl:inverseOf rdf:resource="http://schema.landrs.org/isPartOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/isPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/isPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/isPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/isPartOf">
+    <rdfs:comment>A transitive relation expressing parthood between any entities, e.g. 'brain is a part of the human body'. When specializing this pattern, take care of restricting the domain and range appropriately, since it could be counterintuitive to use this relation arbitrarily, e.g. between animals and planets. For an intransitive partof pattern, see 'componency'.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/isPartOf">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/isPartOf">
+    <rdfs:isDefinedBy rdf:resource="file:///Users/cvardema/Work/research/hydra/landrs-hydra/data/dronekg.ttl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/isPartOf">
+    <rdfs:label xml:lang="en">is part of</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://schema.landrs.org/isPartOf">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+</rdf:RDF>
