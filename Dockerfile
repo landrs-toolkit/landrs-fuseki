@@ -60,7 +60,7 @@ RUN echo "Apache Jena Fuseki Version ${FUSEKI_VERSION}"> /jena-version
 # permissions issues
 #VOLUME /data/fuseki/fuseki_DB
 #ENV FUSEKI_BASE /data/fuseki
-COPY geosparql_test.rdf /
+COPY base.ttl /
 #COPY docker-entrypoint.sh /jena-fuseki
 
 EXPOSE 3030
