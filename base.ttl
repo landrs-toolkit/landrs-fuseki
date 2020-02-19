@@ -37,10 +37,12 @@
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 
 @prefix cpo: <http://daselab.org/ContextualizedWinstonPartWhole#> .
 @prefix po: <http://daselab.org/WinstonPartWhole#> .
 
+@base <http://ld.landrs.org/> .
 @prefix landrs: <http://schema.landrs.org/schema/> .
 
 # Sample Drone Knowledge Graph
@@ -152,13 +154,17 @@ rdfs:label "Precision Pair Beechwood Propeller w/ Metallic Coating" ;
 schema:sameAs <https://www.xoarintl.com/multicopter-propellers/precision-pair/PJP-N-M-The-Electric-Sword-Percision-Pair/> ;
 landrs:isPartOf <id/OTNkMDI1YTctZGE4Ny00Y2IyLWI3MzgtMTU2YzVmMDU1MDI4Cg==> .
 
+landrs:fix1
+  rdf:type time:Instant, traj:fix ;
+  wgs:location landrs:location1 ;
+  rdfs:label "Spatial-Temporal Fix 1" ;
+  time:inXSDDateTimeStamp "2016-09-28T17:37:11+00:00"^^xsd:dateTimeStamp .
 
-
-
-
-
-
-
+landrs:location1
+  rdf:type wgs:Point ;
+  wgs:lat 44.3822137 ;
+  wgs:long -73.258468 ;
+  wgs:alt 66.12 .
 
 # Some TBox URIs that would be part of geoschemas.org
 # https://www.faa.gov/air_traffic/technology/swim/governance/service_semantics/
