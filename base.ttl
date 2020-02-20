@@ -1,49 +1,49 @@
-@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
+@base <http://ld.landrs.org/> .
 @prefix aero: <semantics.aero/pages/swim-vocabulary#> .
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix cpo: <http://daselab.org/ContextualizedWinstonPartWhole#> .
 @prefix dbr:  <http://dbpedia.org/resource/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix envo: <http://purl.obolibrary.org/obo/> .
 @prefix eqp: <https://data.nasa.gov/ontologies/atmonto/equipment#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geoschemas: <http://geoschemas.org/> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
-@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix sf: <http://www.opengis.net/ont/sf#> .
-@prefix schema: <http://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix sosa-ext: <http://www.w3.org/ns/ssn/ext/> .
-@prefix ssn: <http://www.w3.org/ns/ssn/> .
-@prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix ir: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
+@prefix landrs: <http://schema.landrs.org/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://daselab.org/WinstonPartWhole#> .
 @prefix qudt-1-1: <http://qudt.org/1.1/schema/qudt#> .
 @prefix qudt-unit-1-1: <http://qudt.org/1.1/vocab/unit#> .
-@prefix voaf: <http://purl.org/vocommons/voaf#> .
-@prefix envo: <http://purl.obolibrary.org/obo/> .
-@prefix ir: <http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#> .
-@prefix st: <http://www.opengis.net/spec/iot_sensing/1.0/req/> .
-@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
-@prefix geoschemas: <http://geoschemas.org/> .
-@prefix td: <https://www.w3.org/2019/wot/td#> .
-@prefix traj: <http://w3id.org/daselab/onto/trajectory#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa-ext: <http://www.w3.org/ns/ssn/ext/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix ssn-system: <http://www.w3.org/ns/ssn/systems/> .
 @prefix step: <http://www.purl.org/net/step#> .
+@prefix st: <http://www.opengis.net/spec/iot_sensing/1.0/req/> .
+@prefix td: <https://www.w3.org/2019/wot/td#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix traj: <http://w3id.org/daselab/onto/trajectory#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix time: <http://www.w3.org/2006/time#> .
 
-@prefix cpo: <http://daselab.org/ContextualizedWinstonPartWhole#> .
-@prefix po: <http://daselab.org/WinstonPartWhole#> .
-
-@base <http://ld.landrs.org/> .
-@prefix landrs: <http://schema.landrs.org/schema/> .
 
 # Sample Drone Knowledge Graph
 
@@ -382,3 +382,101 @@ landrs:hasWhole a rdf:Property, owl:ObjectProperty ;
   owl:equivalentProperty cpo:hasWhole ;
   schema:inverseOf landrs:isPartOf ;
   owl:inverseOf landrs:isPartOf .
+
+### SHAPE Data
+landrs:FlightControllerBoardShape
+  a sh:NodeShape ;
+  sh:targetClass landrs:FlightControllerBoard;
+####
+# FlightControllerBoard mandatory properties
+####
+sh:property [
+      sh:path schema:description ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:datatype xsd:string;
+ ] ;
+ sh:property [
+      sh:path schema:identifier ;
+      sh:or ( [ sh:datatype xsd:string ; ]
+        [ sh:datatype xsd:anyURI ; ] );
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+ ] ;
+ sh:property [
+      sh:path schema:name ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:datatype xsd:string ;
+ ] ;
+ sh:property [
+   sh:path sosa:hosts ;
+   sh:NodeKind sh:IRI ;
+   sh:class sosa:sensor ;
+   sosa:minCount 1;
+ ] ;
+ ####
+# FlightControllerBoard recommended properties schema.org
+####
+ sh:property [
+      sh:path schema:manufacturer ;
+      sh:class schema:Organization ;
+ ] ;
+ sh:property [
+      sh:path schema:manufacturer ;
+      sh:class schema:Organization ;
+      sh:minCount 1;
+      sh:message "Manufacturer is recommended. Please fill in a value"@en ;
+      sh:severity sh:Warning ;
+ ] ;
+ sh:property [
+      sh:path schema:serialNumber ;
+      sh:datatype xsd:string;
+      sh:maxCount 1 ;
+ ] ;
+ sh:property [
+      sh:path schema:serialNumber ;
+      sh:datatype xsd:string ;
+      sh:minCount 1 ;
+      sh:message "SerialNumber is recommended. Please fill in a value"@en ;
+      sh:severity sh:Warning ;
+ ] ;
+####
+# Equipment optional properties
+####
+ #sh:property [
+ #     sh:path dct:isPartOf ;
+ #     sh:or ( [ sh:class epos:Equipment; ]
+ #       [ sh:class epos:Facility; ] );
+ #] ;
+.
+
+landrs:sensorShape
+  a sh:NodeShape ;
+  sh:targetClass sosa:Sensor ;
+sh:property [
+  sh:path sosa:sosa:observes ;
+  sh:NodeKind sh:IRI ;
+  sh:class sosa:ObservableProperty ;
+  sosa:minCount 1;
+] ;
+sh:property [
+      sh:path schema:description ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:datatype xsd:string;
+ ] ;
+ sh:property [
+      sh:path schema:identifier ;
+      sh:or ( [ sh:datatype xsd:string ; ]
+        [ sh:datatype xsd:anyURI ; ] );
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+ ] ;
+ sh:property [
+      sh:path schema:name ;
+      sh:minCount 1 ;
+      sh:maxCount 1 ;
+      sh:datatype xsd:string ;
+ ] ;
+.
