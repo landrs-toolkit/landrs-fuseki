@@ -19,7 +19,7 @@ ENV MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 RUN mkdir -p /usr/src && cd /usr/src
 RUN git clone https://github.com/apache/jena.git /usr/src/jena
 # WORKDIR /usr/src/jena
-RUN cd /usr/src/jena && git checkout jena-${FUSEKI_VERSION} && mvn clean install -pl jena-fuseki2/jena-fuseki-geosparql -am
+RUN cd /usr/src/jena && git checkout jena-${FUSEKI_VERSION} && mvn -DskipTests clean install -pl jena-fuseki2/jena-fuseki-geosparql -am
 
 FROM openjdk:8-jdk-alpine
 LABEL maintainer="<https://orcid.org/0000-0003-4091-6059>"
