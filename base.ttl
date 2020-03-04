@@ -1,4 +1,4 @@
-@base <http://ld.landrs.org/> .
+@base <http://schema.landrs.org/> .
 @prefix aero: <semantics.aero/pages/swim-vocabulary#> .
 @prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
