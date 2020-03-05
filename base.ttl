@@ -395,8 +395,8 @@ landrs:FlightControllerBoardShape
   sh:property [
     sh:path sosa:hosts ;
     sh:NodeKind sh:IRI ;
-    sh:class sosa:sensor ;
-    sosa:minCount 1;
+    sh:class sosa:Sensor ;
+    sh:minCount 1;
   ] ;
   sh:property [
     sh:NodeKind    sh:IRI;
@@ -415,15 +415,15 @@ landrs:FlightControllerBoardShape
   ] ;
   .
   
-landrs:sensorShape
+landrs:SensorShape
   a sh:NodeShape ;
   sh:targetClass sosa:Sensor ;
 
   sh:property [
-    sh:path sosa:sosa:observes ;
+    sh:path sosa:observes ;
     sh:NodeKind sh:IRI ;
     sh:class sosa:ObservableProperty ;
-    sosa:minCount 1;
+    sh:minCount 1;
   ] ;
   sh:property [
     sh:path schema:description ;
