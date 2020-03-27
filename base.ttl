@@ -1,4 +1,4 @@
-@base <http://schema.landrs.org/> .
+@base <http://ld.landrs.org/> .
 @prefix aero: <semantics.aero/pages/swim-vocabulary#> .
 @prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
@@ -379,10 +379,7 @@ landrs:FlightControllerBoardShape
   ] ;
   sh:property [
     sh:path schema:identifier ;
-    sh:or ( 
-      [ sh:datatype xsd:string ; ]
-      [ sh:datatype xsd:anyURI ; ] 
-    );
+    sh:datatype xsd:string ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
@@ -433,10 +430,7 @@ landrs:SensorShape
   ] ;
   sh:property [
       sh:path schema:identifier ;
-      sh:or ( 
-        [ sh:datatype xsd:string ; ]
-        [ sh:datatype xsd:anyURI ; ] 
-      );
+      sh:datatype xsd:string ;
       sh:minCount 1 ;
       sh:maxCount 1 ;
   ] ;
