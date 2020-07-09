@@ -421,6 +421,7 @@ landrs:SensorShape
     sh:NodeKind sh:IRI ;
     sh:class sosa:ObservableProperty ;
     sh:minCount 1;
+    sh:severity sh:Warning ;
   ] ;
   sh:property [
     sh:path schema:description ;
